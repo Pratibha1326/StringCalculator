@@ -11,7 +11,7 @@ class StringCalculator:
             delimit = self._extract_delimiters(delimit_section)
             numbers = numbers.replace("\n", ",")
 
-            # Replace custom delimiters with comma
+            # Replace custom delimiters with comma          
             for delimiter in delimit:
                 numbers = numbers.replace(delimiter, ",")
         else:
