@@ -8,5 +8,12 @@ class StringCalculator:
             nums = [int(num) for num in numbers.split(",")]
             return sum(nums)
 
-        return int(numbers)
+        delimiter = ","    
+        if numbers.startswith("//"):
+            delimiter = numbers[2]
+            numbers = numbers[4:]
+        numbers = numbers.replace("\n", delimiter)
+        nums = numbers.split(delimiter)
+        nums = [int(num) for num in nums]
+        return sum(nums)
         
