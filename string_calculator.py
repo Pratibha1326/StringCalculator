@@ -5,7 +5,8 @@ class StringCalculator:
         
         if "," in numbers:
             
-            returns int(numbers[0]) + int(numbers[1])
+            nums = [int(num) for num in numbers.split(",")]
+            return sum(nums)
 
         return int(numbers)
         
