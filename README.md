@@ -20,9 +20,11 @@ This repository contains the solution for the String Calculator Kata using Test-
 **Multiple and Any-Length Delimiters**: The calculator must work with multiple delimiters and delimiters of any length.
 
 **Features Implemented:**
+
 Handling of an Empty String: Returns 0 for an empty string.
 
 Handling of a Number: Returns the same number provided the input is just a number.
+
 Sum of Multiple Numbers: Performs addition on any number of numbers, whether it be a comma-separated number or a newline-separated list.
 
 By default new lines are treated as delimiters.
@@ -35,14 +37,22 @@ Accept Multiple and Long Delimiters: Accepts delimiters of any length: for examp
 
 
 **Example usage:**
+
 calculator = StringCalculator()
 
 # Test Cases
 print(calculator.add(""))  # Output: 0
+
 print(calculator.add("1"))  # Output: 1
+
 print(calculator.add("1,5"))  # Output: 6
+
 print(calculator.add("1, 2, 3, 5, 8, 9"))  # Output: 28
+
 print(calculator.add("1\n2,3"))  # Output: 6
+
 print(calculator.add("//;\n1;2;3"))  # Output: 6
+
 print(calculator.add("//[*][%]\n1*2%3"))  # Output: 6
+
 print(calculator.add("//[***]\n1***2***3"))  # Output: 6
