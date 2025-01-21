@@ -39,4 +39,12 @@ def test_sum_with_negetive_numbers():
         calculator.add("1,-2,-3")
     assert str(excinfo.value) == "negative numbers not allowed -2,-3"
 
-
+#Test case to ignore large numbers like above 1000
+def test_ignore_large_numbers():
+    calculator = StringCalculator()
+    assert calculator.add("2, 1001") == 2
+    
+# Test case for anylength of delimiter
+def test_anylength_delimiter():
+    calculator = StringCalculator()
+    assert calculator.add("//[***]\n1***2***3") == 6
