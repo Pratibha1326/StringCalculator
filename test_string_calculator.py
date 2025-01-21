@@ -27,4 +27,16 @@ def test_new_line_between_numbers():
     calculator = StringCalculator()
     assert calculator.add("1\n2,3") == 6
 
+# Test case for different delimiters
+def test_sum_with_custom_delimiters():
+    calculator = StringCalculator()
+    assert calculator.add("//;\n1;2;3") == 6
+
+# Test case for negetive numbers
+def test_sum_with_negetive_numbers():
+    calculator = StringCalculator()
+    with pytest.raises(ValueError) as excinfo:
+        calculator.add("1,-2,-3")
+    assert str(excinfo.value) == "negative numbers not allowed -2,-3"
+
 
