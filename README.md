@@ -4,12 +4,19 @@ This repository contains the solution for the String Calculator Kata using Test-
 
 **Requirements**:
 Empty String: The calculator should return 0 for an empty string.
+
 Single Number: The calculator should return the number when given a string containing just a single number.
+
 Multiple Numbers: The calculator must add multiple numbers (comma-separated).
+
 Newline as a Delimiter: The calculator must accept newlines between numbers as delimiters.
+
 Custom Delimiters: The calculator must support custom delimiters declared at the beginning of the input string.
+
 Negative Numbers: The calculator throws an exception if a negative number occurs in the string, including all negative numbers.
+
 Numbers Greater Than 1000: The calculator treats numbers larger than 1000 as ignored.
+
 Multiple and Any-Length Delimiters: The calculator must work with multiple delimiters and delimiters of any length.
 
 **Features Implemented:**
