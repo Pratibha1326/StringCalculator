@@ -12,7 +12,7 @@ class StringCalculator:
             numbers = numbers.replace("\n", ",")
 
             # Replace custom delimiters with comma
-            for delimiter in delimiters:
+            for delimiter in delimit:
                 numbers = numbers.replace(delimiter, ",")
         else:
             # Case where commas and newlines are the delimiters
@@ -36,3 +36,4 @@ class StringCalculator:
             # In case no delimiters are found, default to a single character delimiter
             delimiters = [delimiter_section[2:]]
         return delimiters
+
