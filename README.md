@@ -1,5 +1,8 @@
 # StringCalculator KATA
 
+**Language**:  Python 3.10.11
+**Module**: Pytest 8.3.4
+
 This repository contains the solution for the String Calculator Kata using Test-Driven Development (TDD). The goal of the kata is to build a calculator that can handle a string of comma-separated numbers with the following features:
 
 **Requirements**:
